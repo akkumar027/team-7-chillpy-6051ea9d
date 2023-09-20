@@ -12,5 +12,9 @@ Make file contains commands needed.
 
 * `make run` Runs the program
 Abhishek Kumar was here
+<<<<<<< HEAD
 
 Testing checking and CI/CD
+=======
+Abhishek was here
+>>>>>>> cd64a4e (Test commit)
