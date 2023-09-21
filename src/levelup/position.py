@@ -1,17 +1,7 @@
 class Position:
 
-    coordinates = (0,0)
-   # x=list (range(0,9))
+    coordinates = list((-1,-1))
 
-   # y=list (range(0,9))
-
-    
-    '''def __init_(self,xCoordinates,yCoordinate):
-       self.x=  xCoordinates
-       self.y = yCoordinate
-       
-       PointCoordinates = Position( xCoordinates, yCoordinate)
-       '''
     def __init__(self):
         # do nothing
         self.coordinates = (-1, -1)
