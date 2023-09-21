@@ -2,7 +2,13 @@ from unittest import TestCase
 from levelup.character import Character
 
 class TestCharacterInitWithName(TestCase):
-    def test_init(self):
-        ARBITRARY_NAME = "MyName"
-        testobj = Character(ARBITRARY_NAME)
-        self.assertEqual(ARBITRARY_NAME, testobj.name)
+    def setUp(self):
+        ARBITRARY_NAME = "Bob"
+        self.testobj = Character(ARBITRARY_NAME)
+        
+    def test_character_not_empty(self):
+        self.assertGreater(len(self.testobj.get_name()), 0)
+
+    def test_character_not_empty(self):
+        ARBITRARY_NAME = "Bob"
+        self.assertEqual(self.testobj.get_name(), ARBITRARY_NAME)
