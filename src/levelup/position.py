@@ -1,6 +1,6 @@
 class Position:
 
-    coordinates = (-1,-1)
+    coordinates = (0,0)
    # x=list (range(0,9))
 
    # y=list (range(0,9))
