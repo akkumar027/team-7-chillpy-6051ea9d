@@ -3,6 +3,11 @@ from levelup.character import Character
 from levelup.gamemap import GameMap
 
 class TestCharacter(TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print("All my tests starts here")
+
     def setUp(self):
         ARBITRARY_NAME = "Bob"
         self.testobj = Character(ARBITRARY_NAME)
@@ -13,4 +18,6 @@ class TestCharacter(TestCase):
     def test_character_same_name(self):
         EXPECTED_NAME = "Bob"
         self.assertEqual(self.testobj.get_name(), EXPECTED_NAME)
+
+
 
