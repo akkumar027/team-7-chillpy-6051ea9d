@@ -1,6 +1,6 @@
 from levelup.controller import GameController
 from levelup.controller import Direction
-from levelup.controller import Position
+from levelup.position import Position
 
 class GameMap:
     def __init__(self,numPositions):
