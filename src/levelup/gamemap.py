@@ -4,15 +4,14 @@ from levelup.position import Position
 
 class GameMap:
     def __init__(self,numPositions):
-        self.position = 100
+        self.numPositions = 100
 
     def getPositions(self):
         pass
     
-    def calculatePosition(self,startingPosition: Position, direction: Direction):
+    def calculatePosition(self,startingPosition: Position, direction: Direction) -> None:
         pass
 
     def isPositionValid(positionCoordinates: Position):
         pass
-    def getTotalPositions():
-        pass
+    
