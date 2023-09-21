@@ -1,6 +1,6 @@
 import GameController
 
-class Map:
+class GameMap:
     def __init__(self,numPositions):
         self.position = 100
 
