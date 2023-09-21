@@ -1,0 +1,16 @@
+import GameController
+
+class Map:
+    def __init__(self,numPositions):
+        self.position = 100
+
+    def getPositions(self):
+        pass
+    
+    def calculatePosition(self,startingPosition: Position, direction: Direction):
+        pass
+
+    def isPositionValid(positionCoordinates: Point):
+        pass
+    def getTotalPositions():
+        pass
