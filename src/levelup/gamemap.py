@@ -1,4 +1,4 @@
-import GameController
+from levelup.controller import GameController
 
 class GameMap:
     def __init__(self,numPositions):
