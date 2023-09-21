@@ -1,6 +1,7 @@
-from levelup.controller import GameController
-from levelup.controller import Direction
-from levelup.position import Position
+from controller import GameStatus, GameController
+from position import Position
+from controller import Direction
+from character import Character
 
 class GameMap:
     def __init__(self,numPositions):
@@ -30,4 +31,3 @@ class GameMap:
     
     totPosition = GameController()
     print(totPosition.get_total_positions())
-    
