@@ -7,12 +7,12 @@ class Position:
 
     
     '''def __init_(self,xCoordinates,yCoordinate):
-       self.x= xCoordinates
+       self.x=  xCoordinates
        self.y = yCoordinate
        
        PointCoordinates = Position( xCoordinates, yCoordinate)
        '''
 
 
-    def __init__(xCoordinates,yCoordinate):
-        coordinates = (xCoordinates,yCoordinate)
+    def __init__(self, xCoordinate,yCoordinate):
+        self.coordinates = (xCoordinate,yCoordinate)
