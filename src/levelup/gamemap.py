@@ -3,8 +3,15 @@ from levelup.controller import Direction
 from levelup.position import Position
 
 class GameMap:
+    @classmethod
     def __init__(self,numPositions):
         self.numPositions = 100
+
+    def get_numPositions(self):
+        return self.numPositions
+
+        
+    '''
 
     def getPositions(self):
         coordinate = Position()
@@ -31,3 +38,4 @@ class GameMap:
     totPosition = GameController()
     print(totPosition.get_total_positions())
     
+'''
