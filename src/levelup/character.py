@@ -1,3 +1,5 @@
+from levelup.position import Position
+from levelup.gamestatus import GameStatus
 class Character:
     name = ""
 
@@ -8,3 +10,6 @@ class Character:
         return self.name
 
 
+    def get_position(self):
+        current_positon = (1,4) # Add the function to actual method
+        return current_positon

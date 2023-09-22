@@ -19,5 +19,10 @@ class TestCharacter(TestCase):
         EXPECTED_NAME = "Bob"
         self.assertEqual(self.testobj.get_name(), EXPECTED_NAME)
 
+    def test_character_position(self):
+        EXPECTED_POSITION = (1,4)
+        self.assertEqual(self.testobj.get_position()[0],EXPECTED_POSITION[0])
+        self.assertEqual(self.testobj.get_position()[1],EXPECTED_POSITION[1])
+
 
 
