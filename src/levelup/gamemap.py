@@ -1,6 +1,7 @@
 from levelup.controller import GameController
 from levelup.controller import Direction
 from levelup.position import Position
+from levelup.character import Character
 
 class GameMap:
     @classmethod
@@ -9,8 +10,14 @@ class GameMap:
 
     def get_numPositions(self):
         return self.numPositions
+    
+    def get_position_getter(self):
+        coordinate = Character()
+        return coordinate.get_position()
 
-        
+    """self.position_coordinate = Character("Alex")
+    self.position_coordinate.get_position()"""
+
     '''
 
     def getPositions(self):

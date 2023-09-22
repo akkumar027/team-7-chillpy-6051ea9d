@@ -1,8 +1,9 @@
 from unittest import TestCase
 from levelup.gamemap import GameMap
+from levelup.character import Character
 '''from levelup.position import Position
 from levelup.controller import GameController
-from levelup.character import Character
+
 from levelup.controller import Direction'''
 
 class TestGameMap(TestCase):
@@ -11,6 +12,9 @@ class TestGameMap(TestCase):
         self.testNumOfPositions = GameMap(100)
         self.assertEqual(self.testNumOfPositions.get_numPositions(), expectedPositionNums)
         
+    def test_position_getter(self):
+        self.position_coordinate = Character("Alex")
+        self.position_coordinate.get_position()
 
         '''aPosition = (0,5)
         self.assertEqual(
