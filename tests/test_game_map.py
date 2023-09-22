@@ -22,6 +22,11 @@ class TestGameMap(TestCase):
         testCurrent = (-1,-1)
         test_current_position = Position(testCurrent[0], testCurrent[1])
         self.assertEqual(testCurrent, test_current_position.coordinates)
+
+    def test_valid_position(self):
+        testValid = (0,0)
+        test_position_valid = Position(testValid[0], testValid[1])
+        self.assertEqual(testValid, test_position_valid.coordinates) 
        
         '''aPosition = (0,5)
         self.assertEqual(
