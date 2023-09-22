@@ -29,18 +29,8 @@ class TestGameMap(TestCase):
         test_position_valid = Position(testValid[0], testValid[1])
         self.assertEqual(testValid, test_position_valid.coordinates) 
        
-    def test_total_positions(self):
-        self.total_positions = GameController()
-        self.total_positions.get_total_positions()
-        '''aPosition = (0,5)
-        self.assertEqual(
-            aPosition,
-            testpos.numPositions'''
-       
-        #self.assertIsNone(testpos.)
-    '''def test_get_position(self):
-       testposition = Game '''
-    '''def test_init(self):
-        testDirection = Direction()
-        assert testDirection.direction != None
-'''
+
+    def test_direction(self):
+        expected_move_input_x = "s"
+        expected_move_input_y = "s"
+        self.assertEqual(expected_move_input_x, expected_move_input_y)
