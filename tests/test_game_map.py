@@ -3,6 +3,7 @@ from levelup.gamemap import GameMap
 from levelup.character import Character
 from levelup.position import Position
 from levelup.controller import Direction
+from levelup.controller import GameController
 '''from levelup.position import Position
 from levelup.controller import GameController
 
@@ -28,6 +29,9 @@ class TestGameMap(TestCase):
         test_position_valid = Position(testValid[0], testValid[1])
         self.assertEqual(testValid, test_position_valid.coordinates) 
        
+    def test_total_positions(self):
+        self.total_positions = GameController()
+        self.total_positions.get_total_positions()
         '''aPosition = (0,5)
         self.assertEqual(
             aPosition,
